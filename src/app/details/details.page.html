@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>details</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+    <ion-item-sliding *ngFor="let lista of listaAlbums">
+      <ion-item lines="inset">
+        <ion-label>
+          {{ lista.title }}
+        </ion-label>
+        <ion-note slot="end" color="primary">{{ lista.id }}</ion-note>
+      </ion-item>
+    </ion-item-sliding>
+  </ion-list>
+
+</ion-content>

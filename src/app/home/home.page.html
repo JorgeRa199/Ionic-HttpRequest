@@ -1,4 +1,4 @@
-<ion-header [translucent]="true">
+ <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
       Blank
@@ -13,8 +13,14 @@
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-list>
+    <ion-item-sliding *ngFor="let lista of listadatos">
+      <ion-item lines="inset" button [routerLink]="['/details', lista.id]">
+        <ion-label>
+          {{ lista.name }}
+        </ion-label>
+        <ion-note slot="end" color="primary">{{ lista.id }}</ion-note>
+      </ion-item>
+    </ion-item-sliding>
+  </ion-list>
 </ion-content>
