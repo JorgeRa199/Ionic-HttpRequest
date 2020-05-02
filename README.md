@@ -7,4 +7,4 @@
 
 ![App](https://i.ibb.co/cJyvQhj/HttpApp.png)
 
-Data extraxted from https://jsonplaceholder.typicode.com
+Data extracted from https://jsonplaceholder.typicode.com
